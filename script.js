@@ -6,8 +6,9 @@ const cardFront = document.querySelector('.card-front');
 const playAgainBtn = document.getElementById('play-again-btn');
 const body = document.body;
 
-// --- Your New List of Truths and Dares ---
+// --- Your EXPANDED List of Truths and Dares (120 total) ---
 const truths = [
+    // Original 30
     "What’s the most childish thing you still do?",
     "Have you ever stalked someone on social media?",
     "Who was your first crush?",
@@ -37,10 +38,42 @@ const truths = [
     "Have you ever sent a message and regretted it immediately?",
     "What’s the longest you’ve gone without bathing? 🔥",
     "What’s the most embarrassing thing in your room right now?",
-    "What’s something that turns you on but you’re embarrassed to admit? 🔥"
+    "What’s something that turns you on but you’re embarrassed to admit? 🔥",
+    // New 30
+    "Have you ever pretended to be someone else online?",
+    "What’s your most embarrassing moment in front of a crush?",
+    "Have you ever sent a flirty message to the wrong person?",
+    "Who is someone you pretend to like but actually don’t?",
+    "What’s the most disgusting habit you have?",
+    "If you could erase one past memory, what would it be?",
+    "What’s the weirdest rumor you’ve heard about yourself?",
+    "Do you secretly stalk someone regularly? 🔥",
+    "Have you ever eavesdropped on someone’s private conversation?",
+    "What’s a kink or fantasy you’ve never told anyone? 🔥",
+    "What’s the weirdest thing you’ve done alone in your room?",
+    "Have you ever had a crush on someone way older?",
+    "What’s something you’ve done that would shock your parents?",
+    "What’s your most used emoji and why?",
+    "What’s the cringiest thing in your search history?",
+    "Who’s one person you wish you never met?",
+    "When was the last time you cried and why?",
+    "Have you ever liked two people at once?",
+    "What’s the dumbest thing you’ve said while nervous?",
+    "What’s one lie you’ve told that you still feel guilty about?",
+    "Have you ever had a romantic dream about someone unexpected? 🔥",
+    "What’s the worst gift you’ve ever received?",
+    "Have you ever been jealous of a close friend?",
+    "What’s the dirtiest text you’ve sent someone?",
+    "What’s something you did just to impress someone?",
+    "Do you still look up your ex on social media?",
+    "What’s one thing that always makes you blush?",
+    "Do you ever imagine kissing someone specific when you're alone?",
+    "Who do you think about before falling asleep most nights? 🔥",
+    "What’s the one secret that could ruin your reputation if exposed?"
 ];
 
 const dares = [
+    // Original 30
     "Text your crush “I dreamt about you last night 😳”",
     "Record yourself singing a cringy song and post it on your story.",
     "Lick your elbow (or try).",
@@ -70,7 +103,38 @@ const dares = [
     "Read aloud your last 5 search results.",
     "Let someone write a fake love post for you and post it on Facebook. 🔥",
     "Smell the feet of the person next to you and rate it honestly. 🔥",
-    "Let someone dare you again – double or nothing."
+    "Let someone dare you again – double or nothing.",
+    // New 30
+    "Let someone write a dirty sentence on your arm with a pen. 🔥",
+    "Post “I’m taken 😘” on your story and don’t reply to anyone who asks.",
+    "Call a random contact and ask, “Do you believe in love at first sight?”",
+    "Do a runway walk with music and dramatic poses.",
+    "Open your messages and read out the last romantic chat.",
+    "Let someone go through your Instagram DMs for 30 seconds. 🔥",
+    "Change your name on social media to something stupid for 1 hour.",
+    "Take a selfie in the weirdest pose and send it to your crush. 🔥",
+    "Eat something without using your hands or utensils.",
+    "Speak in your sexiest voice for 2 full minutes straight.",
+    "Recreate a romantic movie scene with someone here.",
+    "Send your crush a message saying “I had a dream about you last night 👀”",
+    "Stand up and tell the group your most embarrassing secret.",
+    "Scroll through your gallery and show the group the 11th photo. 🔥",
+    "Pretend to flirt with someone here like you’re in a cheesy romance drama.",
+    "Put your phone on speaker and call your crush — ask them to go out.",
+    "Use a pickup line on someone in the room.",
+    "Let someone write something on your stomach and take a picture. 🔥",
+    "Make a fake confession post about being in love with a friend.",
+    "Show your typing suggestions on keyboard without deleting anything.",
+    "Say out loud your browser history from today.",
+    "Let someone else write and send a random flirty DM from your account. 🔥",
+    "Eat a mix of ketchup, salt, milk, and biscuit in one bite.",
+    "Act out how you flirt with someone you really like.",
+    "Share your weirdest dream in detail.",
+    "Try to seduce a bottle like it's a person.",
+    "Wear your shirt backward or inside out for the next 3 rounds.",
+    "Do a twerking attempt for 10 seconds in front of everyone. 🔥",
+    "Hug a pillow and pretend it’s your crush — say 3 things to it.",
+    "Let someone text anything (not cruel or harmful) from your phone and keep it posted for 10 minutes. 🔥"
 ];
 
 // This function checks for the fire emoji and builds our final list
